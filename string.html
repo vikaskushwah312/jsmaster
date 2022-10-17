@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Number guessing game</title>
+  </head>
+
+  <body>
+    <ul class="greetings">
+      <li>Happy Birthday!</li>
+      <li>Merry Christmas my love</li>
+      <li>A happy Christmas to all the family</li>
+      <li>You're all I want for Christmas</li>
+      <li>well soon</li>
+    </ul>
+  <script>
+    const list = document.querySelector('ul .greetings');
+
+    const greetings = ['Happy Birthday!',
+                 'Merry Christmas my love',
+                 'A happy Christmas to all the family',
+                 'You\'re all I want for Christmas',
+                 'Get well soon'];
+    
+    
+    for(const greeting of greetings){
+
+      if (greeting) {
+        const listItem = document.createElement('li');
+        listItem.textContent = greeting;
+        list.appendChild(listItem);
+      }
+
+    }
+    //   // console.log(greetMessage[msg]);
+    //   // if(greetMessage[msg].includes('Christmas')){
+    //   //   console.log(greetMessage[msg]);
+    //   // }
+    //   if(msg.includes('Christmas')){
+    //     console.log(msg);
+    //   }
+    // }
+  </script>
+  </body>
+</html>

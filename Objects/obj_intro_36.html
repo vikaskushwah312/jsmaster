@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+/*const key = 'email';
+let val1 = 'email@gmail.com';
+const person = {
+    'first Name' : 'vikas',
+    lastName : 'Kushwah',
+    age : 28,
+    hobbies : ['khel1','khel2','khel3'],
+    [key] :val1,
+}
+// console.log('person',person['first Name']);
+console.log('person',person);
+console.log('person',Array.isArray(Object.keys(person)));
+
+for (const key in person) {
+    console.log(person[key]);
+}*/
+const person = {
+    firstName : 'vikas',
+    lastName : 'Kushwah',
+    age : 28,
+};
+
+const band = {
+  bandName: "led zepplin",
+  famousSong: "stairway to heaven",
+  year: 1968,
+  anotherFamousSong: "kashmir",
+};
+
+let { bandName, famousSong, ...restProps } = band;
+let { firstName, lastName} = person;
+
+/*const person2 = {...person,gender:'Male'};
+const person3 = {...person,...'item'};
+// console.log('compare',person===person2);
+console.log('per',person3);*/
+/*object destructuring*/
+
+// let { bandName, famousSong, ...restProps } = band;
+console.log(firstName);
+
+
+
+</script>
+
+</body>
+</html>

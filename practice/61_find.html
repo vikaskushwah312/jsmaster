@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h1>JavaScript Reduce Method</h1> -->
+<p id="demo"></p>
+
+<script>
+const myArray = ["Hello", "catt", "dosg", "lion"];
+
+// const str = myArray.find((str)=>{ return str.length === 3})
+
+const userCart = [
+    {productId: 1, productName: "mobile", price: 12000},
+    {productId: 2, productName: "laptop", price: 22000},
+    {productId: 3, productName: "tv", price: 35000},
+]
+
+// const ans = userCart.every((cartItem)=>cartItem.price > 30000);
+const koiBhi = userCart.some((cart) =>cart.price > 30000)
+
+console.log('koiBhi',koiBhi);
+</script>
+
+</body>
+</html>

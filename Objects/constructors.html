@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Constructors</h2>
+
+<p id="demo"></p>
+
+<script>
+// Constructor function for Person objects
+function Person(first,last,age,eye){
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eye = eye;
+}
+
+const father = new Person('Ram','Sharm',55,'blue');
+const mother = new Person('She','jig',45,'gree');
+father.nationality = 'Indian';
+document.getElementById('demo').innerHTML = Object.values(father);
+
+
+</script>
+
+</body>
+</html>

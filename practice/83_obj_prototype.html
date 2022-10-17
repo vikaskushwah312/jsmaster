@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h1>JavaScript Reduce Method</h1> -->
+<p id="demo"></p>
+
+<script>
+function createUser(firstName,lastName,age,address){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.address = address;
+}
+
+const funObj = new createUser('vikas','kushwah',27,'Indore');
+const funObj2 = new createUser('vikas2','kushwah2',27,'Indore3');
+createUser.prototype.fullname = function(){
+    return `my full name is ${this.firstName} ${this.lastName}`;
+}
+console.log(funObj2.fullname());
+    
+</script>
+
+</body>
+</html>

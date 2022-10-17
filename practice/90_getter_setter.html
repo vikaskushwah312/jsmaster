@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h1>JavaScript Reduce Method</h1> -->
+<p id="demo"></p>
+
+<script>
+
+class Person{
+    constructor(firstName,lastName,age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    get fullName(){
+        return `your fullName is ${this.firstName} ${this.lastName}`;
+    }
+    set fullName(fullName){
+        const [firstName,lastName] = fullName.split(' ');
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+const person = new Person('vikas','kushwah',28)
+console.log(person.fullName);
+console.log(person.fullName());
+</script>
+
+</body>
+</html>

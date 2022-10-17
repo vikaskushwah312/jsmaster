@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Set Size</p>
+<span id="set"></span>
+
+
+<script>
+//set methods
+//new Set(),add(),delete(),has(),forEach(),values(),
+//set property size
+
+const set = new Set();
+set.add('a');
+set.add('b');
+set.add('c');
+
+console.log('before Delete',set.size);
+console.log('delete excuted',set.delete('5'));
+
+console.log('value exist or not ',set.has('a'));
+
+console.log('values  ',set.has('a'));
+console.log('after Delete',set.size);
+
+document.getElementById('set').innerHTML = set.size;
+
+console.log('set size',set.values);
+</script>
+
+</body>
+</html> 

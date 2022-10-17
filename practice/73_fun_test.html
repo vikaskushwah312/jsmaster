@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h1>JavaScript Reduce Method</h1> -->
+<p id="demo"></p>
+
+<script>
+function personInfo(hobby,favmusi){
+    console.log(`person name is ${this.firstName} and age is ${this.age} and hobby is ${hobby} and musi ${favmusi}`);
+}
+
+const person1 = {
+    firstName : "harsh",
+    age: 8,
+    about: personInfo
+}
+
+const person2 = {
+    firstName : "mohit",
+    age: 8,
+    about: personInfo
+}
+// person1.about(['khal','kahl2'],'sya');
+const func = personInfo.bind(person1, "guitar", "bach");
+// const fun = personInfo.bind(person1,'hobb','fav');
+func();
+
+
+</script>
+
+</body>
+</html>

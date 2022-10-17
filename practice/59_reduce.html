@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h1>JavaScript Reduce Method</h1> -->
+<p id="demo"></p>
+
+<script>
+const userCart = [
+    {productId: 1, productName: "mobile", price: 12},
+    {productId: 2, productName: "laptop", price: 8},
+    {productId: 3, productName: "tv", price: 15},
+]
+
+const total = userCart.reduce((total,user) => {
+    return total + user.price;
+},0)
+console.log('total total ',total);
+</script>
+
+</body>
+</html>

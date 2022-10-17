@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Get Set</h1>
+<p id="demo"></p>
+
+<script>
+    // const persion = {
+    //     firstName : 'Vikas',
+    //     lastName : 'Kushwah',
+    //     age : 27,
+    //     fullname(){
+    //         return `I am ${this.firstName} ${this.lastName} and age ${this.age}`;
+    //     }
+    // };
+
+    // const persion = {
+    //     firstName : 'Vikas',
+    //     lastName : 'Kushwah',
+    //     age : 27,
+    //     get fullname(){
+    //         return `I am ${this.firstName} ${this.lastName} and age ${this.age}`;
+    //     },
+    //     language: "",
+    //     set lang(lang) {
+    //         this.language = lang.toUpperCase();
+    //     }
+
+    // };
+    // let text = document.querySelector('#demo');
+    // persion.lang = 'en';
+    // console.log(persion.language);
+    // text.textContent = persion.language+' '+persion.fullname;
+
+    // Object.defineProperty()
+    const obj = {counter : 0 };
+    Object.defineProperty(obj,'reset',{
+        get : function(){ this.counter = 0; },
+    });
+
+    Object.defineProperty(obj,'increment',{
+        get: function(){this.counter++;},
+    });
+
+    Object.defineProperty(obj,'decrement',{
+        get : function(){this.counter--;},
+    });
+
+    Object.defineProperty(obj,'add',{
+        set : function(num){this.counter += num},
+    });
+
+    Object.defineProperty(obj,'subtract',{
+        set: function(num){this.counter -= num},
+    });
+
+    obj.reset;
+    obj.add = 5;
+    obj.subtract = 1;
+    obj.increment;
+    obj.decrement;
+    
+    document.querySelector('#demo').textContent = obj.counter;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h1>JavaScript Reduce Method</h1> -->
+<p id="demo"></p>
+
+<script>
+    //fucntion return the object
+    const userMethod = {
+        
+        about : function(){
+            return `${this.firstName} is ${this.age} years old.`;
+        },
+
+        is18 : function(){
+            return this.age >= 18;
+        },
+        sing : function(){
+            return `ha ha `;
+        }
+    }
+    function createUser(firstName, lastName,age,address){
+        // const user  = {}
+        const user = Object.create(userMethod);
+        
+        user.firstName = firstName;
+        user.lastName = lastName;
+        user.age = age;
+        user.address = address;
+        // user.about = userMethod.about;
+        // user.is18 = userMethod.is18;
+        /*user.about = function(){
+            return `${this.firstName} is ${this.age} years old.`;
+        }
+        user.is18 =  function(){
+            return this.age >= 18;
+        }*/
+
+        return user;
+
+    }
+    const user1 = createUser('vikas','kushwah',28,'Indore');
+    const user2 = createUser('vikas2','kushwah2',282,'Indore2');
+    user1.gender = 'Male';
+    console.log(user2);
+</script>
+
+</body>
+</html>

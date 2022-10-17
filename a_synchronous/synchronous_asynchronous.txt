@@ -1,0 +1,7 @@
+#Introducing asynchronous JavaScript
+
+    Asynchronous programming:- 
+        Asynchronous programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result.
+
+    Synchronous programming :-
+        the browser effectively steps through the program one line at a time, in the order we wrote it. At each point, the browser waits for the line to finish its work before going on to the next line. It has to do this because each line depends on the work done in the preceding lines

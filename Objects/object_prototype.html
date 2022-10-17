@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Proto type</h2>
+
+<p id="abc"></p>
+<p id="xyz"></p>
+
+<script>
+    function Person(first,last,age){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+    }
+
+    Person.prototype.nationality = "Indian";
+    
+    const abc = new Person('Ram','Sharm',28);
+    abc.book = 'Ram Sita';
+    const xyz = new Person('Ravan','ji',26);
+    
+    
+    // console.log(abc.nationality);
+    document.querySelector('#abc').textContent = Object.values(abc);
+    document.querySelector('#xyz').textContent = Object.values(xyz);
+
+
+    const myDate = new Date(1995, 11, 17)
+
+    console.log('object method',Object.getPrototypeOf(myDate)); // 95
+
+    myDate.getYear = function(){
+        return 'you are in myDate object method not in object prototype'
+    }
+    console.log('object method overwrite',myDate.getYear()); // 95
+
+    
+
+</script>
+
+</body>
+</html>

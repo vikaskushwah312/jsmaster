@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+// input 025468
+// output  0-254-6-8
+// function addDash(str) {
+//     let result = [str[0]];
+//     let length = num.length;
+//     console.log('result',result);
+//     for(let i=1; i<length; i++){
+//         if(str[i-1]%2==0 && str[i]%2==0){
+//             result.push('-',str[i]);
+//         }else{
+//             result.push(str[i]);
+//         }
+//     }
+
+    
+//     return result.join('');
+// }
+// num = "025468";
+
+// console.log(addDash(num));
+// console.log([ 3, 8, 7, 6, 5, -4, 3, 2, 1 ].sort())
+
+// Sort the number
+
+function mySort(str){
+    let temp=0;
+    const arr = [...str];
+    for(let i=0;i<arr.length;i++){
+        for(let j=i+1; j<arr.length;j++){
+            if(arr[i]>arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    return arr.join('');
+}
+let str = "431258"
+console.log(mySort(str));
+</script>
+
+</body>
+</html> 

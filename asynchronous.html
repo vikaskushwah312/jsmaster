@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Number guessing game</title>
+  </head>
+
+  <body>
+    <label for="quota">Number of primes:</label>
+    <input type="text" id="quota" name="quota" value="10000000" />
+
+    <button id="generate">Generate primes</button>
+    <button id="reload">Reload</button>
+
+    <div id="output"></div>
+
+  <script>
+    
+    const MAX_PRIME = 1000000;
+
+  function isPrime(n) {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return n > 1;
+  }
+
+  const random = (max) => Math.floor(Math.random() * max);
+
+
+
+  </script>
+  </body>
+</html>
