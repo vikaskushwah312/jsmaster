@@ -5,3 +5,6 @@
 
     Synchronous programming :-
         the browser effectively steps through the program one line at a time, in the order we wrote it. At each point, the browser waits for the line to finish its work before going on to the next line. It has to do this because each line depends on the work done in the preceding lines
+Promis :-  Promis Always store in microtask queue.
+Note:- setTimeOut finction are store in callback queue where promises are store in micro task queue
+But microtask first execute then callback queue execute hoga.
