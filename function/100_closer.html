@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Number guessing game</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      
+      .form input[type="number"] {
+        width: 200px;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>Start machine2</button>
+   <script>
+    function myFunction(power){
+      let count=1;
+      return function(number){
+        
+        console.log(`${power} ke liye ${count} bar call kar liya h`);
+        count++;
+        return number ** power;
+      }
+    }
+    
+    const squre = myFunction(2);
+    console.log(squre(5));
+    console.log(squre(5));
+
+    const qdube = myFunction(3);
+    console.log(qdube(2));
+  </script>
+  </body>
+</html>
