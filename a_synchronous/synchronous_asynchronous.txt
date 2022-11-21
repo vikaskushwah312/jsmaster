@@ -8,3 +8,6 @@
 
     Promises :- 
         Promises are the foundation of asynchronous programming in modern JavaScript. A promise is an object returned by an asynchronous function, which represents the current state of the operation. At the time the promise is returned to the caller, the operation often isn't finished, but the promise object provides methods to handle the eventual success or failure of the operation.
+	Promis :-  Promis Always store in microtask queue.
+	Note:- setTimeOut finction are store in callback queue where promises are store in micro task queue
+	But microtask first execute then callback queue execute hoga.

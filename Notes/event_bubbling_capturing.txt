@@ -1,0 +1,4 @@
+Event bubbling : - when you click on chaild then it's automatically call the parent and super parent method if they have some method.
+Event delegation :- 
+
+
